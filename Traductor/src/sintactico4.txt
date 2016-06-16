@@ -8,23 +8,20 @@ NoTerminales = { Axioma  S SF SI Declaracion Asignacion Operacion IO LlamaFuncio
  OperacionRela OperacionLogi OperacionRest OperacionArit1 OperacionRela1 OperacionLogi1 OperacionRest ListaParam1 ListaParam ListaParamTipo ListaParamTipo1 Param Term }
 
 //// Axioma
-Axioma = Axioma
+Axioma = S
 
 //// Lista de producciones
 Producciones = {
 
-Axioma -> S
-S -> S S
-S -> Declaracion
-S -> Asignacion
-S -> Operacion
-S -> IO
-S -> LlamaFuncion
-S -> Funcion
-S -> Condicional
-S -> For
+S -> Declaracion br S
+S -> Asignacion br S
+S -> Operacion br S
+S -> IO br S
+S -> LlamaFuncion br S
+S -> Funcion br S
+S -> Condicional br S
+S -> For br S
 
-SF -> SF SF
 SF -> Declaracion
 SF -> Asignacion
 SF -> Operacion

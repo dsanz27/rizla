@@ -15,7 +15,7 @@ public class AnSintLL {
 	
 	private static String archivoEntrada = "src/tokens.txt";
 	private static String tabla = "src/tabla.txt";
-	private static String gramatica = "src/sintactico3.txt";
+	private static String gramatica = "src/sintactico5.txt";
 	private static String gram = "src/GramASint.txt";
 	private static String linea;
 	private static String cima;
