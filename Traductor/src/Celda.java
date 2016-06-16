@@ -23,7 +23,7 @@ public class Celda {
 	
 	public boolean equals(Object obj){
 		if(obj instanceof Celda)
-			return this.terminal == ((Celda)obj).getTerminal() && this.noTerminal == ((Celda)obj).getNoTerminal(); 
+			return this.terminal.equals(((Celda)obj).getTerminal()) && this.noTerminal.equals(((Celda)obj).getNoTerminal()); 
 		return false;
 	}
 	

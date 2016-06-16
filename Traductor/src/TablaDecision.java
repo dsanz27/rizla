@@ -19,7 +19,7 @@ public class TablaDecision {
 	}
 	
 	public void addCelda(Celda celda) throws Exception{
-		
+
 		if(this.tabla.contains(celda))
 			throw new Exception("La celda ya existe. No se creará la tabla");
 		else{

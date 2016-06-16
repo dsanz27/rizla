@@ -10,35 +10,35 @@ Axioma = S
 //// Lista de producciones
 Producciones = {
 
-
-
-S -> Declaracion br S
-S -> Asignacion br S
-S -> IO br S
-S -> Funcion br S
-S -> Condicional br S
-S -> For br S
+S -> br S
+S -> Declaracion S
+S -> Asignacion S
+S -> IO S
+S -> Funcion S
+S -> Condicional S
+S -> For S
 S -> lambda
 
-
-
-SF -> Declaracion br SF
-SF -> Asignacion br SF
-SF -> IO br SF
-SF -> Condicional br SF
-SF -> For br SF
+SF -> br SF
+SF -> Declaracion SF
+SF -> Asignacion SF
+SF -> IO SF
+SF -> Condicional SF
+SF -> For SF
 SF -> lambda
 
-SI -> Declaracion br
-SI -> Asignacion br
-SI -> IO br
-SI -> Condicional br
-SI -> For br
+SI -> Declaracion
+SI -> Asignacion
+SI -> IO
+SI -> Condicional
+SI -> For
+
+
 
 Declaracion -> var tipo id
 
 Asignacion -> id X
-X -> = A1
+X -> = Cadena
 X -> -= Term
 X -> ( ListaParam )
 A1 -> Cadena

@@ -69,6 +69,7 @@ public class ListaProducciones {
 		Iterator<String> simbolosFollow;
 		ArrayList<String> consLambda=new ArrayList<String>();
 		consLambda.add("lambda");
+		String simbolo;
 		
 		
 		itProducciones = this.producciones.keySet().iterator();
@@ -86,7 +87,8 @@ public class ListaProducciones {
 						simbolosFollow=follow.iterator();
 						while(simbolosFollow.hasNext()){
 							prodAux=new Produccion(antecedente,consLambda);
-							tabla.addCelda(new Celda(antecedente,simbolosFollow.next(),prodAux));
+							simbolo = simbolosFollow.next();
+							tabla.addCelda(new Celda(antecedente,simbolo,prodAux));
 						}
 					}	
 					else
