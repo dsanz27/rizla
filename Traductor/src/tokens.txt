@@ -1,0 +1,15 @@
+<PalRes,function>
+<Id,bisiesto>
+<(,(>
+<Id,a>
+<),)>
+<BR,>
+<{,{>
+<BR,>
+<Id,a>
+<Asignacion,=>
+<Entero,3>
+<BR,>
+<},}>
+<BR,>
+<BR,>

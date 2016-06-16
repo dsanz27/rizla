@@ -1,0 +1,6 @@
+function bisiesto (a)	
+{			
+	a=3
+	return (a + 100==0)
+} // fin de bisiesto
+
